@@ -1,0 +1,17 @@
+In this assignment, we create a program where can do matrix operations such as scalar multiplication,
+subtraction, addition, and transposing for n X n matrices. Using this program we can find out if the martix is
+sparse or not. 
+
+Files:
+Matrix.c
+Matrix.h
+MatrixTest.c
+MatrixTest.h
+List.c
+List.h
+Sparse.c
+Makefile
+
+TO RUN:
+download all files
+tpye make in unix terminal

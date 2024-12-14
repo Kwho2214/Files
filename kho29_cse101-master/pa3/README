@@ -1,0 +1,17 @@
+In this program we are building a Graph module in C that implements the Depth First Search (DFS)
+algorithm. We then use this Graph module to find the strongly connected components of a digraph.
+
+Files:
+README
+Makefile
+List.h
+List.c
+Graph.h
+Graph.c
+GraphTest.c
+FindComponents.c 
+
+How to Run:
+Download all files needed.
+On a linux terminal compile the program with make
+type "FindComponent <input file> <output file>"

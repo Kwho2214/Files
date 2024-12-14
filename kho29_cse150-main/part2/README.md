@@ -1,0 +1,1 @@
+In part2 we make our server, and testing it using curl and wget as our clients. 

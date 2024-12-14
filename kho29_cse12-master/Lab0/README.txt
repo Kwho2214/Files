@@ -1,0 +1,1 @@
+I, Kwanchak Jason Ho, have read and understood the Spring CSE12 syllabus and Personal Responsibility Document. kho29 6 January 2021

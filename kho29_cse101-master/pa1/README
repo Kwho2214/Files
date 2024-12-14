@@ -1,0 +1,12 @@
+Program:
+This program takes in two arguments, a input file to read from and output file to output data to. 
+This program's job is read in the strings from the input file and output it back in alphabetical order. 
+It uses a doubly linked list to indirectly sort the strings it reads in. 
+We make a list using the string's indcies and use those to sort the strings. 
+It uses a cursor so move around the list to keep track of where we are in the list.
+
+To Run Program:
+Download all files that are needed. 
+Use linux timeshare, 
+type make to make the executable Lex
+then to run the program type "Lex <infile to read from> <outfile to output results to>"

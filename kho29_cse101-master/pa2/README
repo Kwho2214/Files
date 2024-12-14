@@ -1,0 +1,16 @@
+Files:
+Graph.c
+FindPath.c
+List.c
+Graph.h
+List.h
+GraphTest.c
+
+Program:
+A graph adt that uses lists. We use Breath First Search to find the shortest 
+path between vertices. This is done in FindPath which takes in an input 
+file to read from and output file to show results.
+
+To run:
+Make the program by typing make in terminal.
+Type: "FindPath <input file> <output file>

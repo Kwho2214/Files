@@ -1,0 +1,16 @@
+default:
+  image: ${DOCKER_IMAGE}
+
+stages:
+  - build
+
+build-code:
+  stage: build
+  script:
+    - git clone --quiet --recursive https://${GIT_USERNAME}:${GIT_TOKEN}@git.ucsc.edu/${GIT_REPO}
+    - cd ci/grading
+    - ./setup.sh
+    - cd ..
+    - python3 ci.py
+  rules:
+    - when: manual

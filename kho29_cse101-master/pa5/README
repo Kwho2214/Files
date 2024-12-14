@@ -1,0 +1,16 @@
+In this assignment we constructed a doubly linked List in c++ where we have vertical cursor
+to use to move around in our List. With the List we simulate a deck shuffle. We shuffle the deck
+until it returns back to its orignal form.
+
+Files:
+List.cpp
+List.h
+ListTest.cpp
+Shuffle.cpp
+Makefile
+
+To run:
+download all files needed
+type make in the teminal to 
+make the executable.
+Then "Shuffle <#of cards>"
