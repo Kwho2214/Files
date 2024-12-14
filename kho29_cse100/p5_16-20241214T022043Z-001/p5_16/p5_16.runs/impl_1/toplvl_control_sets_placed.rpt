@@ -1,0 +1,90 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Feb 23 15:13:28 2023
+| Host         : BELSPC0018 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file toplvl_control_sets_placed.rpt
+| Design       : toplvl
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    12 |
+|    Minimum number of control sets                        |    12 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    48 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    12 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              37 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              18 |            7 |
+| Yes          | No                    | No                     |              16 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              25 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+-----------------------------------------+----------------------+------------------+----------------+
+|          Clock Signal          |              Enable Signal              |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
++--------------------------------+-----------------------------------------+----------------------+------------------+----------------+
+|  slowit/slowclk/MSCLK_CNT4ff_3 | slowit/slowclk/XLXI_45/XLXN_79          | slowit/slowclk/qsec3 |                1 |              3 |
+|  slowit/my_clk_inst/clk_out1   |                                         |                      |                1 |              4 |
+|  slowit/my_clk_inst/clk_out1   | slowit/slowclk/XLXI_37/MSCLK_CNT4ff_2_0 |                      |                1 |              4 |
+|  slowit/my_clk_inst/clk_out1   | slowit/slowclk/XLXI_38/XLXN_70          |                      |                1 |              4 |
+|  slowit/slowclk/MSCLK_CNT4ff_3 |                                         | slowit/slowclk/qsec3 |                1 |              4 |
+|  slowit/slowclk/MSCLK_CNT4ff_3 | slowit/slowclk/XLXI_40/XLXN_75          |                      |                1 |              4 |
+|  slowit/slowclk/MSCLK_CNT4ff_3 | slowit/slowclk/XLXI_49/MSCLK_CNT4ff_2_0 | slowit/slowclk/qsec3 |                1 |              4 |
+|  slowit/slowclk/MSCLK_CNT4ff_3 | states1/load                            |                      |                1 |              4 |
+|  slowit/slowclk/MSCLK_CNT4ff_3 |                                         | states1/reset        |                3 |              6 |
+|  slowit/slowclk/MSCLK_CNT4ff_3 |                                         | btnU_IBUF            |                3 |              8 |
+|  slowit/slowclk/MSCLK_CNT4ff_3 | slowit/slowclk/enable0                  | btnU_IBUF            |                6 |             18 |
+|  slowit/slowclk/MSCLK_CNT4ff_3 |                                         |                      |               11 |             33 |
++--------------------------------+-----------------------------------------+----------------------+------------------+----------------+
+
+

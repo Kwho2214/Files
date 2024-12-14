@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../p4_19.srcs/sources_1/imports/new/2to1Mux.v" \
+"../../../../p4_19.srcs/sources_1/imports/sources_1/imports/new/Counter.v" \
+"../../../../p4_19.srcs/sources_1/new/Decoder.v" \
+"../../../../p4_19.srcs/sources_1/imports/new/Edge_counter.v" \
+"../../../../p4_19.srcs/sources_1/imports/Desktop/p2_5/p2_5.srcs/sources_1/new/Full_adder.v" \
+"../../../../p4_19.srcs/sources_1/imports/Desktop/p3_12/p3_12.srcs/sources_1/imports/new/Ring_counter.v" \
+"../../../../p4_19.srcs/sources_1/imports/Desktop/p2_5/p2_5.srcs/sources_1/new/SignChanger.v" \
+"../../../../p4_19.srcs/sources_1/imports/Desktop/p2_5/p2_5.srcs/sources_1/new/adder8.v" \
+"../../../../p4_19.srcs/sources_1/new/control_logic.v" \
+"../../../../p4_19.srcs/sources_1/imports/Desktop/p3_12/p3_12.srcs/sources_1/imports/sources_1/imports/new/hex7seg.v" \
+"../../../../p4_19.srcs/sources_1/imports/Desktop/qsec_clks.v" \
+"../../../../p4_19.srcs/sources_1/new/rand_num.v" \
+"../../../../p4_19.srcs/sources_1/new/score_counter.v" \
+"../../../../p4_19.srcs/sources_1/imports/Desktop/p3_12/p3_12.srcs/sources_1/imports/new/selector.v" \
+"../../../../p4_19.srcs/sources_1/new/target_num.v" \
+"../../../../p4_19.srcs/sources_1/new/time_counter.v" \
+"../../../../p4_19.srcs/sources_1/new/toplvl.v" \
+"../../../../p4_19.srcs/sim_1/new/top_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

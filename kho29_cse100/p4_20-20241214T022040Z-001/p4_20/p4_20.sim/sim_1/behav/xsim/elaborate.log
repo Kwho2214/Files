@@ -1,0 +1,44 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f15018077a5047f780b80606e96bc4b8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 6 for port 'Din' [C:/Users/kho29/Desktop/p4_19/p4_19.srcs/sources_1/new/toplvl.v:66]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'out' [C:/Users/kho29/Desktop/p4_19/p4_19.srcs/sources_1/new/toplvl.v:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.count4_MSCLK_clkcntrl4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.AND2
+Compiling module unisims_ver.BUF
+Compiling module xil_defaultlib.clkcntrl4
+Compiling module unisims_ver.STARTUPE2
+Compiling module xil_defaultlib.qsec_clks
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.rand_num
+Compiling module xil_defaultlib.target_num_default
+Compiling module xil_defaultlib.Decoder
+Compiling module xil_defaultlib.Edge_dect
+Compiling module xil_defaultlib.Counter_four
+Compiling module xil_defaultlib.score_counter
+Compiling module xil_defaultlib.time_counter
+Compiling module xil_defaultlib.control_logic_default
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.adder8
+Compiling module xil_defaultlib.two_one_Mux
+Compiling module xil_defaultlib.SignChanger
+Compiling module xil_defaultlib.Ring_counter
+Compiling module xil_defaultlib.selector
+Compiling module xil_defaultlib.hex7seg
+Compiling module xil_defaultlib.toplvl
+Compiling module xil_defaultlib.top_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_sim_behav
